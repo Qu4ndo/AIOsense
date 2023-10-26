@@ -6,7 +6,7 @@ i2s_audio:
 microphone:
   - platform: i2s_audio
     id: mic_i2s
-    channel: left
+    channel: right
     adc_type: external
     i2s_din_pin: "${i2s_din_pin}"  # SD
     i2s_audio_id: i2s_in
