@@ -23,6 +23,6 @@ esphome:
       then:
         - wait_until: api.connected
         - delay: 1s
+        - logger.log: "Microphone is starting..."
         - wait_until: microphone.capture
-        - delay: 1s
         - logger.log: "Microphone started!"
