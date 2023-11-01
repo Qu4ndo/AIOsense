@@ -109,7 +109,7 @@ esphome:
     - priority: -100
       then:
         - wait_until: api.connected
-        - delay: 5s
+        - delay: 1s
         - if:
             condition:
               switch.is_on: use_wake_word
