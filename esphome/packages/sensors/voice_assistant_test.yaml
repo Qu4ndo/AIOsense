@@ -16,7 +16,7 @@ microphone:
           format: "Received %d bytes"
           args: ['x.size()']
 
-sphome:
+esphome:
   min_version: 2023.10.0
   on_boot:
     - priority: -100
