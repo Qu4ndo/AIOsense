@@ -23,4 +23,4 @@ esphome:
       then:
         - wait_until: api.connected
         - delay: 1s
-        - microphone.capture:
+        - microphone.capture
