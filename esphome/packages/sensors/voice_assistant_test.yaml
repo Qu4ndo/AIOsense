@@ -15,3 +15,10 @@ microphone:
       - logger.log:
           format: "Received %d bytes"
           args: ['x.size()']
+
+sphome:
+  min_version: 2023.10.0
+  on_boot:
+    - priority: -100
+      then:
+        - microphone.capture
