@@ -26,4 +26,4 @@ esphome:
         - wait_until: microphone.capture
         - delay: 1s
         - logger.log:
-          format: "Microphone started!"
+            format: "Microphone started!"
