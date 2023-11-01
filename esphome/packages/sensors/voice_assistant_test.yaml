@@ -21,4 +21,6 @@ sphome:
   on_boot:
     - priority: -100
       then:
-        - microphone.capture
+        - wait_until: api.connected
+        - delay: 1s
+        - microphone.capture:
